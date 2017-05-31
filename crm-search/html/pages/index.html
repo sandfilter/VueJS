@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>index</title>
+  <link rel="stylesheet" href="../../css/base.css">
+
+</head>
+
+<body>
+  <!--index-->
+  <article class="index_index" style="width:850px;">
+    <div class="form_box">
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td class="fb_title">
+              <select class="inp_sel" name="">
+                  <option>商标名称</option>
+                  <option>注册号</option>
+                  <option>持有人</option>
+              </select>
+            </td>
+            <td><input class="fb_text" type="text" placeholder="请输入商标名称" name="" value=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 class="title_left">选择行业</h3>
+    <div class="brand_trade">
+      <div class="box" id="industryList">
+        <!-- <a href="javascript:void(0)" class="btn_bggray" data-num="25,18,35,40,42">服装行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="09,16,35,40,42">礼品行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="43,35,29,30">餐饮行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="07,09,10,11,35">电子行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="36,37,42,45">房产行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="01">化工行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="07,11,12,37,39,42">机械行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="20,19,06,24">家具行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="01,02,06,11,17,19,35">建材行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="39,35,41,43,44">旅游行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="29,30,31,32,35">食品行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="05,03,10,30,35,40,42,44">药品医疗行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="12,09,28,35,36,37,39,41,42">汽车行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="16,35,38,41,42">传媒推广</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="09,16,28,35,38,41,42,45">IT行业</a>
+        <a href="javascript:void(0)" class="btn_bggray" data-num="03,05,25,28,29,35">育婴行业</a> -->
+        <industry-item v-for="item in industryList" v-bind:industry="item"></industry-item>
+      </div>
+    </div>
+    <h3 class="title_left">选择类别</h3>
+    <div class="brand_classify">
+      <div class=" bc_left" id="categoryNum">
+        <!-- <a href="javascript:void(0)" class="btn_check_bun ">01</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">02</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">03</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">04</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">05</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">06</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">07</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">08</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">09</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">10</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">11</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">12</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">13</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">14</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">15</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">16</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">17</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">18</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">19</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">20</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">21</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">22</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">23</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">24</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">25</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">26</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">27</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">28</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">29</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">30</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">31</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">32</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">33</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">34</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">35</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">36</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">37</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">38</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">39</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">40</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">41</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">42</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">43</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">44</a>
+        <a href="javascript:void(0)" class="btn_check_bun ">45</a> -->
+        <category-item v-for="item in categoryNum" v-bind:category="item"></category-item>
+      </div>
+      <div class="bc_right">
+        <div class="bc_nothing">
+          <p class="text">点击左侧分类号，可查看群组</p>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <!-- <div class="scroll_box" style="display:none;">
+          <h3 class="title">12类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">22类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">32类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">01类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">03类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">04类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div>
+        <div class="scroll_box" style="display:none;">
+          <h3 class="title">02类-化学原料</h3>
+          <ul>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">全选</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0101 工业气体，单质</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0102 用于工业用于工业用于工业用于工业、科学、农业、园艺、森林的工业</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+            <li><label class="inp_brand_classify"><input type="checkbox" value="">0103 放射性元素及其化学品</label></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="btn_big">开始查询</a>
+  </article>
+  <!--/index-->
+  <!--layer_point-->
+  <div class="layer_point">请输入商标名称</div>
+  <!--/layer_point-->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script type="text/javascript">
+  Vue.component('industry-item', {
+    props: ['industry'],
+    template: '<a href="javascript:void(0)" class="btn_bggray" data-num="{{industry.num}}">{{ industry.name }}</a>'
+  });
+  Vue.component('category-item', {
+    props: ['category'],
+    template: '<a href="javascript:void(0)" class="btn_check_bun ">{{ category.num }}</a>'
+  });
+  const industryList = new Vue({
+    el: '#industryList',
+    data: {
+      industryList: [
+        { name: '服装行业' , num:'25,18,35,40,42'},
+        { name: '礼品行业' , num:'09,16,35,40,42'},
+        { name: '餐饮行业' , num:'43,35,29,30'},
+        { name: '电子行业' , num:'07,09,10,11,35'},
+        { name: '房产行业' , num:'36,37,42,45'},
+        { name: '化工行业' , num:'01'},
+        { name: '机械行业' , num:'07,11,12,37,39,42'},
+        { name: '家具行业' , num:'20,19,06,24'},
+        { name: '建材行业' , num:'01,02,06,11,17,19,35'},
+        { name: '旅游行业' , num:'39,35,41,43,44'},
+        { name: '食品行业' , num:'29,30,31,32,35'},
+        { name: '药品医疗行业' , num:'05,03,10,30,35,40,42,44'},
+        { name: '汽车行业' , num:'12,09,28,35,36,37,39,41,42'},
+        { name: '传媒推广' , num:'16,35,38,41,42'},
+        { name: 'IT行业' , num:'09,16,28,35,38,41,42,45'},
+        { name: '育婴行业' , num:'03,05,25,28,29,35'}
+      ]
+    }
+  });
+  const categoryNum = new Vue({
+    el: '#categoryNum',
+    data:{
+      categoryNum : [
+        {num: '01'},
+        {num: '02'},
+        {num: '03'},
+        {num: '04'},
+        {num: '05'},
+        {num: '06'},
+        {num: '07'},
+        {num: '08'},
+        {num: '09'},
+        {num: '10'},
+        {num: '11'},
+        {num: '12'},
+        {num: '13'},
+        {num: '14'},
+        {num: '15'},
+        {num: '16'},
+        {num: '17'},
+        {num: '18'},
+        {num: '19'},
+        {num: '20'},
+        {num: '21'},
+        {num: '22'},
+        {num: '23'},
+        {num: '24'},
+        {num: '25'},
+        {num: '26'},
+        {num: '27'},
+        {num: '28'},
+        {num: '29'},
+        {num: '30'},
+        {num: '31'},
+        {num: '32'},
+        {num: '33'},
+        {num: '34'},
+        {num: '35'},
+        {num: '36'},
+        {num: '37'},
+        {num: '38'},
+        {num: '39'},
+        {num: '40'},
+        {num: '41'},
+        {num: '42'},
+        {num: '43'},
+        {num: '44'},
+        {num: '45'}
+      ]
+    }
+  });
+
+  </script>
+  <script src="../../js/jquery-1.9.1.min.js" charset="utf-8"></script>
+  <script src="../../js/base.js" charset="utf-8"></script>
+</body>
+
+</html>

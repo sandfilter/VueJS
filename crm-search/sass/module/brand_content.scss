@@ -1,0 +1,82 @@
+.brand_content{
+    margin:0 auto;
+}
+.bc_brand_info{
+    overflow: hidden;
+    margin:80px auto 0;
+    .img_box{
+        @extend %flexbox;
+        float: left;
+        width: 20%; height: 208px;
+        border:3px solid lighten($cborder, 5%);
+        img{max-width: 100%; max-height: 100%;}
+    }
+    .brand_textinfo{
+        @extend %box;
+        float: left;
+        padding-left: 50px; width: 78%;
+        .brand_name{
+            text-align: left; font-weight: bold;
+            font-size: $font + 4px; padding-bottom: 10px;
+            color:$cfont;
+        }
+        td{
+            vertical-align: top;
+            font-size: $font - 2px; line-height: 28px;
+            color:lighten($cfont , 20%);
+        }
+        .brand_info_title{
+            color:$cfont; height: 100%;
+        }
+        .brand_use{
+            overflow: hidden;
+            dt , dd{float: left; display: inline-block;}
+            dd{max-width: 80%; color:#666;}
+        }
+
+    }
+}
+
+.bc_brand_otherinfo{
+    margin:40px auto 0;
+    .title{
+        @extend %box;
+        width: 100%;  height: 36px; line-height: 36px; font-size: $font + 2px; color:$cfont; padding-left: 20px; margin-bottom: 30px;
+        background: lighten($web1 , 2%);
+    }
+    .bo_brand_apply_info{
+        margin-bottom: 30px;
+        li{
+            line-height: 28px; font-size: $font - 2px; padding-left: 20px;
+            color:$cfont;
+            .info{
+                color:lighten($cfont , 20%);
+            }
+        }
+    }
+    .bo_brand_time{
+        @extend %box; padding-bottom: 30px;
+        padding-left: 20px; width: 100%;
+        table{width: 80%;}
+        td{
+            font-size: $font - 2px; line-height: 28px;
+            color:lighten($cfont , 20%);
+        }
+        .brand_info_title{
+            color:$cfont; height: 100%;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+//end

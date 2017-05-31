@@ -1,0 +1,43 @@
+.form_box{
+    border:1px solid $cborder;
+    table:100%;
+    .fb_title{
+        text-align: right;
+        font-size: $font; height: 44px; padding:0;  width: 10%; min-width: 85px;
+        color:$cfont;
+    }
+    .fb_text{
+        @include inp_box(90% , 44px , 20px , $font);
+        color:$cfont; border:none;
+    }
+    .fb_imgbox{
+        width: 10%;
+        img{width: 120px;}
+    }
+    .fb_btnbox{
+        width: 124px;
+        .btn_small{
+            width: 124px; height: 46px; line-height: 46px;  font-size: $font + 2px;
+        }
+    }
+    .inp_sel{
+        height:46px; width: 100%; outline: 0 none;  border:none; border-right:1px solid #d8d8d8;
+    }
+}
+
+.form_andlogo{
+    border:none;
+     margin:0 auto; 
+    .fb_imgbox{
+        text-align: right;
+        width: 15%; padding-right: 20px;
+        a{display:block;}
+    }
+    .fb_text{
+        border:1px solid $cborder; width: 100%; height: 46px; line-height: 46px;
+
+    }
+    .inp_sel{
+        border:1px solid #d8d8d8; border-right:none;
+    }
+}

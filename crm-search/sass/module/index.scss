@@ -1,0 +1,65 @@
+.index_index{
+     margin:0 auto;
+    .title_logo{
+        text-align: center;
+        width: 100%; margin-top: 200px;
+        img{display: inline;}
+    }
+    .form_box{
+        margin-top: 40px;
+    }
+    .title_left{
+        margin-top: 40px;
+        &:nth-of-type(2){
+            margin-top: 25px;
+        }
+    }
+    .brand_trade{
+        overflow: hidden;
+        width: 100%; margin-top: 25px; width: 100%;
+        .box{overflow: hidden; width: 105%;}
+        .btn_bggray{
+            float: left;
+            margin-right: 5px; margin-bottom: 15px;
+        }
+    }
+    .brand_classify{
+        overflow: hidden; margin-top: 25px;
+        .bc_left{
+            @extend %box;
+            overflow: hidden; float: left;
+            width: 55%;
+            border-top:1px solid $cborder; border-left:1px solid $cborder;
+            .btn_check_bun{
+                float: left; border-top:none;
+                width: 11.11%;
+                border-left:none;
+            }
+        }
+        .bc_right{
+            @extend %box;
+            float: left;
+            width: 45%; height: 251px; padding: 20px; padding-top: 10px;
+            background: $web1;
+            .title{
+                text-align: center;
+                font-size: $font; margin-bottom: 10px; padding-top:10px;
+                color:$cfont;
+            }
+            .scroll_box{
+                height: 220px;  overflow-y: scroll;
+            }
+            .bc_nothing{
+                width: 100%; height: 100%;
+                background: url("../images/ico_point.png") no-repeat  center 70px;
+                .text{
+                    text-align: center;
+                    font-size: $font + 2px; color:lighten($cfont , 40%); padding-top: 130px;
+                }
+            }
+        }
+    }
+    .btn_big{
+        margin:50px auto 0;
+    }
+}

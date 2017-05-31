@@ -1,0 +1,33 @@
+@charset "utf-8" ;
+body,button,input,select,textarea{font-family:Tahoma,Helvetica,"Microsoft YaHei",Arial,sans-serif; color:$cfont;}
+body,div,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,article,aside,footer,header,hgroup,nav,section,menu,figure,figcaption,dialog{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+h1,h2,h3,h4,h5,h6,{font-weight: normal;}
+li{list-style:none;}
+fieldset,img,dialog{border:0;vertical-align:middle;}
+input,textarea{outline-style:none;}
+textarea{resize:none;}
+article,aside,footer,header,hgroup,nav,section,menu{display:block;}
+address,caption,cite,code,dfn,em,i,th,var{font-style:normal;font-weight:400;}
+a{text-decoration:none;outline:none; color:$cfont;}
+a:hover{text-decoration:none;}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.clear{ overflow: hidden; zoom:1;}
+.clr{ clear: both!important;}
+
+input::-webkit-input-placeholder {
+    color:    #999;
+}
+input:-moz-placeholder {
+    color:    #999;
+}
+input::-moz-placeholder {
+    color:    #999;
+}
+input:-ms-input-placeholder {
+    color:    #999;
+}
+input::input-placeholder {
+    color:    #999;
+}
