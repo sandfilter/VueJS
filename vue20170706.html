@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <title>Vue</title>
+  <script type="text/javascript">
+    window.onload = function functionName() {
+
+      let vm = new Vue({
+        el:"#box",
+        data:{
+          a:'这是我的第一个Vue',
+          num:20,
+          isNo:true,
+          arr:['aa',123,'wqe'],
+          json:{a:'aaaa', b:'bbbb',c:'cccc'}
+        }
+      });
+
+      new Vue({
+        el:'#box1',
+        data:{
+          arr:['aa',123,'wqe'],
+          json:{a:'aaaa', b:'bbbb',c:'cccc'}
+        }
+      });
+
+      new Vue({
+        el:'#box2',
+        data:{
+          arr:['aa',123,'wqe'],
+          json:{a:'aaaa', b:'bbbb',c:'cccc'}
+        },
+        methods:{
+          show:function (a,b) {
+            console.log('这是方法'+(a+b));
+          },
+          addArr:function () {
+            this.arr.push('sandfilter');
+          }
+        }
+      });
+
+      new Vue({
+        el:'#box3',
+        methods:{
+          show:function () {
+            console.log('这是方法');
+          },
+          data:{
+            myIsShow:false
+          }
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+  <div id="box">
+    <h1>{{a}}</h1>
+    <input type="text" name="" value="" v-model="a"> <!--双向绑定：v-model-->
+    <hr>
+    {{num}}
+    <hr>
+    {{isNo}}
+    <hr>
+    {{arr}}
+    <hr>
+    {{json}}
+    <hr>
+  </div>
+
+  <div id="box1">
+    <ul>
+      <li v-for="(v,i) in arr">{{v}}=={{i}}</li><!--数据操作：v-for-->
+    </ul>
+    <ul>
+      <li v-for="(v,k) in json">{{k}}==>{{v}}</li>
+    </ul>
+  </div>
+
+  <div id="box2">
+    <ul>
+      <li v-for="(v,i) in arr">{{v}}=={{i}}</li><!--数据操作：v-for-->
+    </ul>
+    <input type="button" name="" value="button" v-on:click="show(2,4)" />
+    <input type="button" name="" value="添加数组内容" v-on:click="addArr()" />
+  </div>
+
+  <div id="box3">
+    <input type="button" name="" value="button" @click="show" />
+    <input type="button" name="" value="show" @click="myIsShow=!myIsShow" />
+    <div style="width:100px; height:100px; background:#f00;" ></div><!--v-show='myIsShow'-->
+  </div>
+
+  
+</body>
+</html>
